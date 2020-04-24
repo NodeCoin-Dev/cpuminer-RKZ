@@ -131,6 +131,7 @@ Supported Algorithms
                           cpupower      CPUchain (CPU)
                           yespowerinter Intercoin (ITC)
                           yespowerltncg Lightningcash-Gold (Ltncg)
+                          yespowermocha MochaChain (MOCHA)
                           yespowerlitb  LightBit (LITB)
                           yespowersugar Sugarchain (SUGAR)
                           yespower2b    yespower2b

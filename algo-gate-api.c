@@ -256,6 +256,7 @@ bool register_algo_gate( int algo, algo_gate_t *gate )
     case ALGO_CPUPOWER:      register_cpupower_algo      ( gate ); break;
     case ALGO_YESPOWER_INTER: register_yespower_inter_algo ( gate ); break;
     case ALGO_YESPOWER_LTNCG: register_yespower_ltncg_algo ( gate ); break;
+    case ALGO_YESPOWER_MOCHA: register_yespower_mocha_algo ( gate ); break;
     case ALGO_YESPOWERLITB:  register_yespowerlitb_algo  ( gate ); break;
     case ALGO_YESPOWERSUGAR:  register_yespowersugar_algo  ( gate ); break;
     case ALGO_YESPOWER_B2B:  register_yespower_b2b_algo  ( gate ); break;

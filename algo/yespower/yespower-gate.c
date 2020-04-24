@@ -248,6 +248,20 @@ bool register_yespower_ltncg_algo( algo_gate_t* gate )
    return true;
 };
 
+bool register_yespower_mocha_algo( algo_gate_t* gate )
+{
+   gate->optimizations = SSE2_OPT;
+   gate->scanhash   = (void*)&scanhash_yespower;
+   opt_target_factor = 65536.0;
+   gate->get_max64  = (void*)&yespower_get_max64;
+   yespower_params.version = YESPOWER_1_0;
+   yespower_params.N       = 2048;
+   yespower_params.r       = 32;
+   yespower_params.pers    = "Decentralization is key - 4/16/20";
+   yespower_params.perslen = 33;
+   return true;
+};
+
 int64_t yescrypt_05_get_max64()
 {
   return 0x1ffLL;
